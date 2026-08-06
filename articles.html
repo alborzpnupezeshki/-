@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>مقالات علمی - گروه پزشکی پیام نور البرز</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/nav.css">
+</head>
+<body data-page="articles">
+
+<div id="site-header-root"></div>
+
+<div id="articlesPage" class="container">
+    <div id="articleList"></div>
+    <div class="pill-btn tap" onclick="goTo('index.html')">← بازگشت به صفحه اصلی</div>
+</div>
+
+<div id="fullArticlePage" class="full-article-page">
+    <button class="back-btn" onclick="closeFullArticle()">← بازگشت</button>
+    <div class="full-article-card">
+        <h1 class="full-article-title" id="fullArticleTitle"></h1>
+        <span class="full-article-meta" id="fullArticleMeta"></span>
+        <div class="full-article-body" id="fullArticleBody"></div>
+    </div>
+</div>
+
+<script src="assets/app.js"></script>
+<script src="assets/nav.js"></script>
+<script>
+    const articles = [
+        {
+            id: 1,
+            title: "بررسی تأثیر ویتامین D بر شدت علائم بیماران مبتلا به آسم",
+            authors: "دکتر سارا احمدی، دکتر علی کریمی",
+            date: "۱۴۰۴/۰۲/۱۰",
+            abstract: "این مطالعه بر روی ۱۲۰ بیمار مبتلا به آسم انجام شد و نشان داد که مصرف مکمل ویتامین D به کاهش قابل‌توجه علائم و حملات آسم کمک می‌کند.",
+            body: `
+                <h3>چکیده</h3>
+                <p>مقدمه: آسم یکی از شایع‌ترین بیماری‌های مزمن تنفسی است که کیفیت زندگی بیماران را تحت تأثیر قرار می‌دهد. مطالعات اخیر نشان داده‌اند که ویتامین D ممکن است نقش تعدیل‌کننده در پاسخ‌های التهابی دستگاه تنفسی داشته باشد.</p>
+                <p><strong>روش‌ها:</strong> این مطالعه کارآزمایی بالینی تصادفی‌سازی شده بر روی ۱۲۰ بیمار مبتلا به آسم انجام شد. بیماران به دو گروه ۶۰ نفره تقسیم شدند. گروه مداخله روزانه ۵۰۰۰۰ واحد ویتامین D به مدت ۱۲ هفته دریافت کردند و گروه کنترل دارونما دریافت کردند.</p>
+                <p><strong>یافته‌ها:</strong> نتایج نشان داد که در گروه مداخله، تعداد حملات آسم به طور میانگین ۴۲٪ کاهش یافت و نمرات کنترل آسم (ACT) به میزان قابل‌توجهی بهبود یافت (p < 0.001). همچنین سطح سرمی ویتامین D در گروه مداخله از ۱۸ به ۴۲ نانوگرم بر میلی‌لیتر افزایش یافت.</p>
+                <p><strong>نتیجه‌گیری:</strong> مصرف مکمل ویتامین D در بیماران مبتلا به آسم می‌تواند به عنوان یک رویکرد کمکی مؤثر در کنار درمان‌های استاندارد مورد استفاده قرار گیرد.</p>
+                <h3>کلیدواژه‌ها</h3>
+                <p>آسم، ویتامین D، التهاب، مکمل‌های غذایی، کنترل علائم</p>
+                <div class="ref">
+                    <strong>منابع:</strong><br>
+                    ۱. Jolliffe DA, et al. Vitamin D and asthma: a systematic review. Am J Respir Crit Care Med. 2023.<br>
+                    ۲. Sutherland ER, et al. Vitamin D and asthma. Curr Opin Pulm Med. 2022.
+                </div>
+            `
+        },
+        {
+            id: 2,
+            title: "مقایسه اثربخشی روش‌های مختلف بازتوانی قلبی در بیماران پس از سکته قلبی",
+            authors: "دکتر رضا محمدی، دکتر فاطمه حسینی",
+            date: "۱۴۰۴/۰۱/۲۵",
+            abstract: "این پژوهش ۱۵۰ بیمار را بررسی کرد و نشان داد که بازتوانی ترکیبی (ورزش + آموزش تغذیه) تأثیر بیشتری بر بهبود عملکرد قلب دارد.",
+            body: `
+                <h3>چکیده</h3>
+                <p>مقدمه: بازتوانی قلبی یکی از اجزای اصلی درمان پس از سکته قلبی است. با این حال، بهترین روش بازتوانی هنوز به طور کامل مشخص نشده است.</p>
+                <p><strong>روش‌ها:</strong> ۱۵۰ بیمار پس از سکته قلبی به سه گروه تقسیم شدند: گروه اول بازتوانی ورزشی، گروه دوم بازتوانی تغذیه‌ای و گروه سوم بازتوانی ترکیبی (ورزش + تغذیه). همه گروه‌ها به مدت ۸ هفته تحت نظر قرار گرفتند.</p>
+                <p><strong>یافته‌ها:</strong> پس از ۸ هفته، گروه ترکیبی بهبود معناداری در پارامترهای عملکردی قلب (کسر جهشی، ظرفیت تحمل ورزش) نسبت به دو گروه دیگر نشان داد (p < 0.05). همچنین سطح کلسترول LDL در گروه ترکیبی به طور محسوسی کاهش یافت.</p>
+                <p><strong>نتیجه‌گیری:</strong> بازتوانی ترکیبی (ورزش + آموزش تغذیه) مؤثرترین روش برای بهبود عملکرد قلبی و کاهش عوامل خطر در بیماران پس از سکته قلبی است.</p>
+                <h3>کلیدواژه‌ها</h3>
+                <p>بازتوانی قلبی، سکته قلبی، ورزش، تغذیه، کسر جهشی</p>
+                <div class="ref">
+                    <strong>منابع:</strong><br>
+                    ۱. Anderson L, et al. Cardiac rehabilitation. Cochrane Database Syst Rev. 2023.<br>
+                    ۲. Smith SC, et al. Diet and exercise in cardiac patients. Circulation. 2022.
+                </div>
+            `
+        },
+        {
+            id: 3,
+            title: "نقش میکروبیوم روده در ایجاد مقاومت به انسولین و دیابت نوع ۲",
+            authors: "دکتر نرگس رضایی، دکتر محسن طاهری",
+            date: "۱۴۰۴/۰۱/۰۸",
+            abstract: "این مرور نظام‌مند نشان می‌دهد که تغییرات در ترکیب میکروبیوم روده می‌تواند پیش‌بینی‌کننده خطر ابتلا به دیابت نوع ۲ باشد.",
+            body: `
+                <h3>چکیده</h3>
+                <p>مقدمه: دیابت نوع ۲ یک بیماری متابولیک شایع با ابعاد همه‌گیر جهانی است. شواهد جدید نقش مهمی برای میکروبیوم روده در هموستاز گلوکز و مقاومت به انسولین مطرح کرده‌اند.</p>
+                <p><strong>روش‌ها:</strong> این مطالعه مرور نظام‌مند بر روی ۴۸ مقاله منتشر شده بین سال‌های ۲۰۲۰ تا ۲۰۲۴ انجام شد که به بررسی ارتباط میکروبیوم روده با دیابت نوع ۲ پرداخته بودند.</p>
+                <p><strong>یافته‌ها:</strong> یافته‌ها نشان داد که کاهش تنوع میکروبی و کاهش جمعیت باکتری‌های تولیدکننده اسیدهای چرب کوتاه‌زنجیر با افزایش مقاومت به انسولین ارتباط معنی‌داری دارد. همچنین نسبت Firmicutes/Bacteroidetes در بیماران دیابتی به طور معناداری بیشتر بود.</p>
+                <p><strong>نتیجه‌گیری:</strong> تعدیل میکروبیوم روده از طریق پروبیوتیک‌ها یا تغییرات رژیم غذایی می‌تواند یک رویکرد نوین برای پیشگیری و کنترل دیابت نوع ۲ باشد.</p>
+                <h3>کلیدواژه‌ها</h3>
+                <p>میکروبیوم روده، دیابت نوع ۲، مقاومت به انسولین، پروبیوتیک، اسیدهای چرب کوتاه‌زنجیر</p>
+                <div class="ref">
+                    <strong>منابع:</strong><br>
+                    ۱. Turnbaugh PJ, et al. Gut microbiome and metabolic disease. Nature. 2023.<br>
+                    ۲. Bajaj JS, et al. Gut microbiome and diabetes. J Clin Invest. 2022.<br>
+                    ۳. Zhang X, et al. Probiotics and insulin sensitivity. Gut Microbes. 2024.
+                </div>
+            `
+        },
+        {
+            id: 4,
+            title: "تأثیر خواب ناکافی بر عملکرد شناختی و حافظه در دانشجویان پزشکی",
+            authors: "دکتر پریسا امینی، دکتر بهزاد نوری",
+            date: "۱۴۰۳/۱۲/۰۲",
+            abstract: "بررسی ۹۰ دانشجوی پزشکی نشان داد کمبود خواب با افت معنادار در تمرکز، حافظه کوتاه‌مدت و عملکرد تحصیلی همراه است.",
+            body: `
+                <h3>چکیده</h3>
+                <p>مقدمه: کم‌خوابی مزمن در میان دانشجویان پزشکی به دلیل حجم بالای دروس و شیفت‌های بالینی شایع است و می‌تواند بر عملکرد شناختی تأثیر بگذارد.</p>
+                <p><strong>روش‌ها:</strong> ۹۰ دانشجوی پزشکی بر اساس میانگین ساعت خواب شبانه به سه گروه (کمتر از ۵ ساعت، ۵ تا ۷ ساعت، بیش از ۷ ساعت) تقسیم شدند و با آزمون‌های استاندارد حافظه و توجه ارزیابی شدند.</p>
+                <p><strong>یافته‌ها:</strong> گروه با خواب کمتر از ۵ ساعت به طور معناداری نمرات پایین‌تری در آزمون‌های حافظه کاری و زمان واکنش کسب کردند (p < 0.01). همبستگی مثبتی نیز بین ساعت خواب و معدل ترم مشاهده شد.</p>
+                <p><strong>نتیجه‌گیری:</strong> رعایت بهداشت خواب می‌تواند نقش مؤثری در بهبود عملکرد تحصیلی و شناختی دانشجویان پزشکی داشته باشد.</p>
+                <h3>کلیدواژه‌ها</h3>
+                <p>خواب، عملکرد شناختی، حافظه، دانشجویان پزشکی، بهداشت خواب</p>
+                <div class="ref">
+                    <strong>منابع:</strong><br>
+                    ۱. Walker MP. Sleep and cognitive performance. Nat Rev Neurosci. 2023.<br>
+                    ۲. Alvi T, et al. Sleep deprivation in medical students. Med Educ Online. 2022.
+                </div>
+            `
+        },
+        {
+            id: 5,
+            title: "کارایی آموزش مجازی در مقایسه با آموزش حضوری در دروس علوم پایه پزشکی",
+            authors: "دکتر امیر صادقی، دکتر لیلا کاظمی",
+            date: "۱۴۰۳/۱۱/۱۸",
+            abstract: "مقایسه نمرات پایان‌ترم دو گروه دانشجو نشان داد آموزش ترکیبی (حضوری و مجازی) نسبت به هر دو روش به‌تنهایی نتایج بهتری داشته است.",
+            body: `
+                <h3>چکیده</h3>
+                <p>مقدمه: با گسترش آموزش مجازی، ارزیابی اثربخشی آن در مقایسه با روش‌های سنتی در دروس علوم پایه پزشکی اهمیت یافته است.</p>
+                <p><strong>روش‌ها:</strong> نمرات پایان‌ترم سه گروه دانشجو (آموزش حضوری، مجازی، و ترکیبی) در درس فیزیولوژی طی دو نیمسال تحصیلی مقایسه شد.</p>
+                <p><strong>یافته‌ها:</strong> گروه آموزش ترکیبی میانگین نمره بالاتری نسبت به دو گروه دیگر کسب کرد (p < 0.05) و رضایت دانشجویان نیز در این گروه بیشتر گزارش شد.</p>
+                <p><strong>نتیجه‌گیری:</strong> ترکیب آموزش حضوری و مجازی می‌تواند رویکردی مؤثر برای ارتقای یادگیری در دروس علوم پایه پزشکی باشد.</p>
+                <h3>کلیدواژه‌ها</h3>
+                <p>آموزش مجازی، آموزش ترکیبی، علوم پایه پزشکی، فیزیولوژی</p>
+                <div class="ref">
+                    <strong>منابع:</strong><br>
+                    ۱. Means B, et al. Blended learning outcomes. Rev Educ Res. 2023.<br>
+                    ۲. Pei L, Wu H. Online education in medical schools. Med Educ Online. 2022.
+                </div>
+            `
+        }
+    ];
+
+    function metaIcon(type) {
+        const paths = {
+            author: '<circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/>',
+            date: '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/>'
+        };
+        return `<svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths[type]}</svg>`;
+    }
+
+    function renderArticles() {
+        const list = document.getElementById('articleList');
+        list.innerHTML = articles.map(art => `
+            <div class="article-card" onclick="openFullArticle(${art.id})">
+                <div class="article-title">${art.title}</div>
+                <div class="article-meta">
+                    <span>${metaIcon('author')} ${art.authors}</span>
+                    <span>${metaIcon('date')} ${art.date}</span>
+                </div>
+                <div class="article-abstract">${art.abstract}</div>
+            </div>
+        `).join('');
+    }
+
+    function openFullArticle(id) {
+        const art = articles.find(a => a.id === id);
+        if (!art) return;
+
+        document.getElementById('fullArticleTitle').innerText = art.title;
+        document.getElementById('fullArticleMeta').innerHTML = `${metaIcon('author')} ${art.authors} &nbsp;|&nbsp; ${metaIcon('date')} ${art.date}`;
+        document.getElementById('fullArticleBody').innerHTML = art.body;
+
+        document.getElementById('articlesPage').style.display = 'none';
+        document.getElementById('fullArticlePage').classList.add('show');
+        window.scrollTo(0, 0);
+        try { history.pushState({ page: 'fullArticle' }, '', '#article'); } catch (err) { /* روی برخی وب‌ویوها (مثل file://) مجاز نیست؛ نمایش کامل مقاله بدون آن هم درست کار می‌کند */ }
+    }
+
+    function closeFullArticle() {
+        document.getElementById('fullArticlePage').classList.remove('show');
+        document.getElementById('articlesPage').style.display = 'block';
+        try { history.replaceState({ page: 'articles' }, '', window.location.pathname); } catch (err) { /* بی‌خطر نادیده گرفته می‌شود */ }
+    }
+
+    window.addEventListener('popstate', () => {
+        if (document.getElementById('fullArticlePage').classList.contains('show')) {
+            closeFullArticle();
+        }
+    });
+
+    renderArticles();
+</script>
+</body>
+</html>
